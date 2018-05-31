@@ -93,3 +93,7 @@ CREATE TABLE `studenttable` (
   PRIMARY KEY (`stdid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
+
+LOCK TABLES `studenttable` WRITE;
+/*!40000 ALTER TABLE `studenttable` DISABLE KEYS */;
+INSERT INTO `studenttable` VALUES (1,'Rim',123,'11','City','12345678'),(2,'Tony',123,'11','City','12345678'),(3,'Ricky',123,'12','Town','12345678'),(5,'Rom',123,'12','City','12345678'),(7,'Rinji',123,'12','Town','12345678');
